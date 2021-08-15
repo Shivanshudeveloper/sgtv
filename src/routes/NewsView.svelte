@@ -1,10 +1,19 @@
 <script>
     import { Link } from "svelte-routing";
+    const urlParams = new URLSearchParams(window.location.search);
+    let id = urlParams.get('id');
+    export let news;
+
+
+    
+
+    let newsinfo = news.filter(n => n.id == id);
+
 </script>
 
 <main>
     <div class="px-4 my-5 text-center">
-        <h1 class="fw-bold">Aaj Tak (आज तक)</h1>
+        <h1 class="fw-bold">{newsinfo[0].title}</h1>
     </div>
 
     <div class="m-4">
@@ -14,14 +23,19 @@
             </Link>
         </center>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" title="News" src="https://feeds.intoday.in/livetv/?id=livetv-at&aud_togle=1&autostart=1&t_src=live_tv_page&t_med=web&utm_medium=web&utm_source=live_tv_page&v=1.3" allowfullscreen></iframe>
+            <iframe class="responsive-iframe" title="News" src={newsinfo[0].link} allowfullscreen></iframe>
         </div>
     </div>
 </main>
 
 <style>
-    iframe {
-        height: 750px;
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
         width: 100%;
+        height: 100%;
     }
 </style>
