@@ -6,7 +6,7 @@
 
 <main>
     <div class="px-4 my-5 text-center">
-        <h1 class="display-1 fw-bold">Shivan <strong>TV</strong></h1>
+        <h1 class="display-1 fw-bold">SD <strong>TV</strong></h1>
     </div>
 
     <div class="container" id="custom-cards">
@@ -20,12 +20,12 @@
                 {#each news as newscomp}
                     <div class="col">
                         <Link style="text-decoration: none;" to={`newsview?id=${newscomp.id}`}>
-                            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <strong class="text-danger">LIVE</strong>
+                            <div style="height: 250px" class="card card-body rounded-5 shadow-lg">
+                            <strong class="text-danger">LIVE</strong>
+                            <div class="d-flex flex-column h-100 p-4 text-white text-shadow-1">
                                 <center>
                                     <!-- svelte-ignore a11y-missing-attribute -->
-                                    <img class="mb-2" style="width: 200px;" src={newscomp.image} />
+                                    <img style="width: 200px;" src={newscomp.image} />
                                 </center>
                             </div>
                             </div>

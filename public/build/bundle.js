@@ -2256,7 +2256,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "No Players";
-    			add_location(p, file$3, 17, 16, 447);
+    			add_location(p, file$3, 17, 16, 446);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -2283,9 +2283,9 @@ var app = (function () {
     // (22:24) <Link style="text-decoration: none;" to={`newsview?id=${newscomp.id}`}>
     function create_default_slot$2(ctx) {
     	let div1;
-    	let div0;
     	let strong;
     	let t1;
+    	let div0;
     	let center;
     	let img;
     	let img_src_value;
@@ -2293,29 +2293,29 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div1 = element("div");
-    			div0 = element("div");
     			strong = element("strong");
     			strong.textContent = "LIVE";
     			t1 = space();
+    			div0 = element("div");
     			center = element("center");
     			img = element("img");
     			attr_dev(strong, "class", "text-danger");
-    			add_location(strong, file$3, 24, 32, 912);
-    			attr_dev(img, "class", "mb-2");
+    			add_location(strong, file$3, 23, 28, 786);
     			set_style(img, "width", "200px");
     			if (!src_url_equal(img.src, img_src_value = /*newscomp*/ ctx[1].image)) attr_dev(img, "src", img_src_value);
-    			add_location(img, file$3, 27, 36, 1113);
-    			add_location(center, file$3, 25, 32, 986);
-    			attr_dev(div0, "class", "d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1");
-    			add_location(div0, file$3, 23, 28, 807);
-    			attr_dev(div1, "class", "card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg");
-    			add_location(div1, file$3, 22, 28, 688);
+    			add_location(img, file$3, 27, 36, 1083);
+    			add_location(center, file$3, 25, 32, 956);
+    			attr_dev(div0, "class", "d-flex flex-column h-100 p-4 text-white text-shadow-1");
+    			add_location(div0, file$3, 24, 28, 856);
+    			set_style(div1, "height", "250px");
+    			attr_dev(div1, "class", "card card-body rounded-5 shadow-lg");
+    			add_location(div1, file$3, 22, 28, 687);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
+    			append_dev(div1, strong);
+    			append_dev(div1, t1);
     			append_dev(div1, div0);
-    			append_dev(div0, strong);
-    			append_dev(div0, t1);
     			append_dev(div0, center);
     			append_dev(center, img);
     		},
@@ -2363,7 +2363,7 @@ var app = (function () {
     			create_component(link.$$.fragment);
     			t = space();
     			attr_dev(div, "class", "col");
-    			add_location(div, file$3, 20, 20, 546);
+    			add_location(div, file$3, 20, 20, 545);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2437,7 +2437,7 @@ var app = (function () {
     			main = element("main");
     			div0 = element("div");
     			h1 = element("h1");
-    			t0 = text("S.G ");
+    			t0 = text("SD ");
     			strong = element("strong");
     			strong.textContent = "TV";
     			t2 = space();
@@ -2447,18 +2447,18 @@ var app = (function () {
     			t4 = space();
     			div1 = element("div");
     			if_block.c();
-    			add_location(strong, file$3, 8, 42, 171);
+    			add_location(strong, file$3, 8, 41, 170);
     			attr_dev(h1, "class", "display-1 fw-bold");
     			add_location(h1, file$3, 8, 8, 137);
     			attr_dev(div0, "class", "px-4 my-5 text-center");
     			add_location(div0, file$3, 7, 4, 93);
     			attr_dev(h2, "class", "pb-2 border-bottom");
-    			add_location(h2, file$3, 12, 8, 262);
+    			add_location(h2, file$3, 12, 8, 261);
     			attr_dev(div1, "class", "row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5");
-    			add_location(div1, file$3, 14, 8, 322);
+    			add_location(div1, file$3, 14, 8, 321);
     			attr_dev(div2, "class", "container");
     			attr_dev(div2, "id", "custom-cards");
-    			add_location(div2, file$3, 11, 4, 212);
+    			add_location(div2, file$3, 11, 4, 211);
     			add_location(main, file$3, 6, 0, 82);
     		},
     		l: function claim(nodes) {
@@ -3231,6 +3231,27 @@ var app = (function () {
     		image: "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1629030242/todolist/news-24-logo-article-removebg-preview_jelhdm.png",
     		title: "News 24",
     		link: "https://content.vidgyor.com/live/midroll/html/news24.html"
+    	},
+    	{
+    		id: 4,
+    		type: "hindi news",
+    		image: "https://www.livenewsnow.com/wp-content/uploads/2014/12/India-TV-1.png",
+    		title: "India TV",
+    		link: "https://content.vidgyor.com/live/midroll/html/indiatv.html"
+    	},
+    	{
+    		id: 5,
+    		type: "hindi news",
+    		image: "https://upload.wikimedia.org/wikipedia/commons/e/e3/News_nation_logo.jpg",
+    		title: "News Nation",
+    		link: "https://www.dailymotion.com/embed/video/x7t0g3i?autoplay=1&mute=0"
+    	},
+    	{
+    		id: 6,
+    		type: "hindi news",
+    		image: "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1629037739/todolist/images-removebg-preview_wrbjul.png",
+    		title: "Tez News",
+    		link: "https://feeds.intoday.in/livetv/?id=livetv-tez&aud_togle=1&autostart=1&t_src=live_tv_page&t_med=web&utm_medium=web&utm_source=live_tv_page&v=1.3"
     	}
     ];
 
