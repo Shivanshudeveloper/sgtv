@@ -2152,7 +2152,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (19:12) {:else}
+    // (24:12) {:else}
     function create_else_block(ctx) {
     	let each_1_anchor;
     	let current;
@@ -2241,14 +2241,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(19:12) {:else}",
+    		source: "(24:12) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (17:12) {#if news.length === 0}
+    // (22:12) {#if news.length === 0}
     function create_if_block(ctx) {
     	let p;
 
@@ -2256,7 +2256,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "No Players";
-    			add_location(p, file$3, 17, 16, 446);
+    			add_location(p, file$3, 22, 16, 463);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -2273,14 +2273,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(17:12) {#if news.length === 0}",
+    		source: "(22:12) {#if news.length === 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (22:24) <Link style="text-decoration: none;" to={`newsview?id=${newscomp.id}`}>
+    // (27:24) <Link style="text-decoration: none;" to={`newsview?id=${newscomp.id}`}>
     function create_default_slot$2(ctx) {
     	let div1;
     	let strong;
@@ -2300,16 +2300,16 @@ var app = (function () {
     			center = element("center");
     			img = element("img");
     			attr_dev(strong, "class", "text-danger");
-    			add_location(strong, file$3, 23, 28, 786);
+    			add_location(strong, file$3, 28, 28, 803);
     			set_style(img, "width", "200px");
     			if (!src_url_equal(img.src, img_src_value = /*newscomp*/ ctx[1].image)) attr_dev(img, "src", img_src_value);
-    			add_location(img, file$3, 27, 36, 1083);
-    			add_location(center, file$3, 25, 32, 956);
+    			add_location(img, file$3, 32, 36, 1100);
+    			add_location(center, file$3, 30, 32, 973);
     			attr_dev(div0, "class", "d-flex flex-column h-100 p-4 text-white text-shadow-1");
-    			add_location(div0, file$3, 24, 28, 856);
+    			add_location(div0, file$3, 29, 28, 873);
     			set_style(div1, "height", "250px");
     			attr_dev(div1, "class", "card card-body rounded-5 shadow-lg");
-    			add_location(div1, file$3, 22, 28, 687);
+    			add_location(div1, file$3, 27, 28, 704);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -2333,14 +2333,14 @@ var app = (function () {
     		block,
     		id: create_default_slot$2.name,
     		type: "slot",
-    		source: "(22:24) <Link style=\\\"text-decoration: none;\\\" to={`newsview?id=${newscomp.id}`}>",
+    		source: "(27:24) <Link style=\\\"text-decoration: none;\\\" to={`newsview?id=${newscomp.id}`}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (20:16) {#each news as newscomp}
+    // (25:16) {#each news as newscomp}
     function create_each_block(ctx) {
     	let div;
     	let link;
@@ -2363,7 +2363,7 @@ var app = (function () {
     			create_component(link.$$.fragment);
     			t = space();
     			attr_dev(div, "class", "col");
-    			add_location(div, file$3, 20, 20, 545);
+    			add_location(div, file$3, 25, 20, 562);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2400,7 +2400,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(20:16) {#each news as newscomp}",
+    		source: "(25:16) {#each news as newscomp}",
     		ctx
     	});
 
@@ -2447,19 +2447,19 @@ var app = (function () {
     			t4 = space();
     			div1 = element("div");
     			if_block.c();
-    			add_location(strong, file$3, 8, 41, 170);
+    			add_location(strong, file$3, 11, 41, 177);
     			attr_dev(h1, "class", "display-1 fw-bold");
-    			add_location(h1, file$3, 8, 8, 137);
+    			add_location(h1, file$3, 11, 8, 144);
     			attr_dev(div0, "class", "px-4 my-5 text-center");
-    			add_location(div0, file$3, 7, 4, 93);
+    			add_location(div0, file$3, 10, 4, 100);
     			attr_dev(h2, "class", "pb-2 border-bottom");
-    			add_location(h2, file$3, 12, 8, 261);
+    			add_location(h2, file$3, 17, 8, 278);
     			attr_dev(div1, "class", "row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5");
-    			add_location(div1, file$3, 14, 8, 321);
+    			add_location(div1, file$3, 19, 8, 338);
     			attr_dev(div2, "class", "container");
     			attr_dev(div2, "id", "custom-cards");
-    			add_location(div2, file$3, 11, 4, 211);
-    			add_location(main, file$3, 6, 0, 82);
+    			add_location(div2, file$3, 14, 4, 218);
+    			add_location(main, file$3, 9, 0, 89);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3252,6 +3252,13 @@ var app = (function () {
     		image: "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1629037739/todolist/images-removebg-preview_wrbjul.png",
     		title: "Tez News",
     		link: "https://feeds.intoday.in/livetv/?id=livetv-tez&aud_togle=1&autostart=1&t_src=live_tv_page&t_med=web&utm_medium=web&utm_source=live_tv_page&v=1.3"
+    	},
+    	{
+    		id: 7,
+    		type: "hindi news",
+    		image: "https://akamaividz.zee5.com/image/upload/w_368,h_207,c_scale,f_auto,q_auto/resources/0-9-zeebusiness/channel_list/zeebusinessanilsinghvi.png",
+    		title: "Zee Business",
+    		link: "https://www.zeebiz.com/live-tv/embed"
     	}
     ];
 

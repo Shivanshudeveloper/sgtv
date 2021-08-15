@@ -43,6 +43,13 @@ let news = [
 		image: "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1629037739/todolist/images-removebg-preview_wrbjul.png",
 		title: "Tez News",
 		link: "https://feeds.intoday.in/livetv/?id=livetv-tez&aud_togle=1&autostart=1&t_src=live_tv_page&t_med=web&utm_medium=web&utm_source=live_tv_page&v=1.3"
+	},
+	{
+		id: 7,
+		type: "hindi news",
+		image: "https://akamaividz.zee5.com/image/upload/w_368,h_207,c_scale,f_auto,q_auto/resources/0-9-zeebusiness/channel_list/zeebusinessanilsinghvi.png",
+		title: "Zee Business",
+		link: "https://www.zeebiz.com/live-tv/embed"
 	}
 ];
 
