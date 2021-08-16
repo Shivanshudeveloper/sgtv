@@ -22,7 +22,7 @@
                             <div class="d-flex flex-column h-100 p-4 text-white text-shadow-1">
                                 <center>
                                     <!-- svelte-ignore a11y-missing-attribute -->
-                                    <img style="width: 200px; height: 150px" src={newscomp.image} />
+                                    <img style="width: 200px; height: 125px" src={newscomp.image} />
                                 </center>
                             </div>
                             </div>

@@ -2748,7 +2748,7 @@ var app = (function () {
     			attr_dev(strong, "class", "text-danger");
     			add_location(strong, file$4, 20, 28, 779);
     			set_style(img, "width", "200px");
-    			set_style(img, "height", "150px");
+    			set_style(img, "height", "125px");
     			if (!src_url_equal(img.src, img_src_value = /*newscomp*/ ctx[1].image)) attr_dev(img, "src", img_src_value);
     			add_location(img, file$4, 24, 36, 1076);
     			add_location(center, file$4, 22, 32, 949);
@@ -16220,7 +16220,7 @@ var app = (function () {
     	{
     		id: 2,
     		type: "hindi news",
-    		image: "https://www.exchange4media.com/news-photo/109657-abplogo.jpg",
+    		image: "https://exchange4media.gumlet.io/news-photo/109657-abplogo.jpg?format=webp&w=750&dpr=1.0",
     		title: "ABP News",
     		link: "https://abp-i.akamaihd.net/hls/live/765529/abphindi/master.m3u8",
     		videotype: "m3u8"

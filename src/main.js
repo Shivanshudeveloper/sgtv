@@ -13,7 +13,7 @@ let news = [
 	{
 		id: 2,
 		type: "hindi news",
-		image: "https://www.exchange4media.com/news-photo/109657-abplogo.jpg",
+		image: "https://exchange4media.gumlet.io/news-photo/109657-abplogo.jpg?format=webp&w=750&dpr=1.0",
 		title: "ABP News",
 		link: "https://abp-i.akamaihd.net/hls/live/765529/abphindi/master.m3u8",
 		videotype: "m3u8"
