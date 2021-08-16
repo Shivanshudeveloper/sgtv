@@ -1,5 +1,5 @@
 
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
+(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 var app = (function () {
     'use strict';
 
@@ -15453,9 +15453,9 @@ var app = (function () {
     			attr_dev(iframe, "title", "News");
     			if (!src_url_equal(iframe.src, iframe_src_value = /*newsinfo*/ ctx[1][0].link)) attr_dev(iframe, "src", iframe_src_value);
     			iframe.allowFullscreen = true;
-    			add_location(iframe, file$1, 39, 20, 1040);
+    			add_location(iframe, file$1, 39, 20, 993);
     			attr_dev(div, "class", "embed-responsive embed-responsive-16by9");
-    			add_location(div, file$1, 38, 16, 966);
+    			add_location(div, file$1, 38, 16, 919);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -15543,13 +15543,14 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			source = element("source");
-    			attr_dev(source, "data-src", "https://abp-i.akamaihd.net/hls/live/765529/abphindi/master.m3u8");
+    			attr_dev(source, "data-src", /*newsinfo*/ ctx[1][0].link);
     			attr_dev(source, "type", "application/x-mpegURL");
     			add_location(source, file$1, 34, 20, 770);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, source, anchor);
     		},
+    		p: noop$1,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(source);
     		}
@@ -16302,6 +16303,14 @@ var app = (function () {
     		type: "hindi news",
     		image: "https://upload.wikimedia.org/wikipedia/commons/e/e9/DD_News.png",
     		title: "DD News",
+    		link: "https://m-c20-j2apps.s.llnwi.net/hls/0182.DDNews.in.m3u8",
+    		videotype: "m3u8"
+    	},
+    	{
+    		id: 13,
+    		type: "hindi news",
+    		image: "https://upload.wikimedia.org/wikipedia/commons/e/e9/DD_News.png",
+    		title: "Stock",
     		link: "https://m-c20-j2apps.s.llnwi.net/hls/0182.DDNews.in.m3u8",
     		videotype: "m3u8"
     	}

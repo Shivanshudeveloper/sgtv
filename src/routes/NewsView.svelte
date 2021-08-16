@@ -32,7 +32,7 @@
         {#if newsinfo[0].videotype === "m3u8"}
             <Player controls>
                 <Hls version="latest" config="{hlsConfig}" poster="/media/poster.png">
-                    <source data-src="https://abp-i.akamaihd.net/hls/live/765529/abphindi/master.m3u8" type="application/x-mpegURL" />
+                    <source data-src={newsinfo[0].link} type="application/x-mpegURL" />
                 </Hls>
             </Player>
             {:else}
