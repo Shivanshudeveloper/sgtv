@@ -1,11 +1,8 @@
 <script>
-	export let news;
-
+	export let categories;
     import { Link } from "svelte-routing";
 
-    
 </script>
-
 
 <main>
     <div class="px-4 my-5 text-center">
@@ -13,33 +10,28 @@
     </div>
 
     <div class="container" id="custom-cards">
-
-        
-        <h2 class="pb-2 border-bottom">Hindi news</h2>
-    
+        <h2 class="pb-2 border-bottom">Categories</h2>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-
-            {#if news.length === 0}
-                <p>No Players</p>
+            
+            {#if categories.length === 0}
+                <p>No Categories</p>
             {:else}
-                {#each news as newscomp}
+                {#each categories as category}
                     <div class="col">
-                        <Link style="text-decoration: none;" to={`newsview?id=${newscomp.id}`}>
-                            <div style="height: 250px" class="card card-body rounded-5 shadow-lg">
-                            <strong class="text-danger">LIVE</strong>
-                            <div class="d-flex flex-column h-100 p-4 text-white text-shadow-1">
-                                <center>
-                                    <!-- svelte-ignore a11y-missing-attribute -->
-                                    <img style="width: 200px;" src={newscomp.image} />
-                                </center>
-                            </div>
+                        <Link style="text-decoration: none;" to={`${category.link}`}>
+                            <div style="height: 250px; color: #ffffff" class="card card-body rounded-5 shadow-lg text-center p-5">
+                                <h1 class="mt-5 fw-bold">
+                                    {category.title}
+                                </h1>
+                                <small style="color: red;" class="fw-bold mt-2">LIVE</small>
                             </div>
                         </Link>
                     </div>
                 {/each}
             {/if}
-    
-          
+            
+
+
         </div>
     </div>
 

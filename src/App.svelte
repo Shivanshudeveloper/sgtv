@@ -1,5 +1,6 @@
 <script>
 	export let news;
+	export let categories;
 	import { Router, Route } from "svelte-routing";
 	import Home from "./routes/Home.svelte";
 	import News from "./routes/News.svelte";
@@ -12,11 +13,13 @@
 <Router url="{url}">
 	<div>
 	  	<Route path="/">
-			<Home news={news} />
+			<Home categories={categories} />
+		</Route>
+		<Route path="/hindinews">
+			<News news={news} />
 		</Route>
 		<Route path="newsview">
 			<NewsView news={news} />
 		</Route>
-		<Route path="news/:id" component="{News}" />
 	</div>
 </Router>
